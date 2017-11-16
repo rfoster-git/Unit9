@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unit 9</title>
+</head>
+<body>
+
+<p><strong>We</strong> have just started <strong>this</strong> section for the users (<strong>beginner</strong> to intermediate) who want to work with <strong>various</strong> JavaScript <strong>problems</strong> and write scripts online to <strong>test</strong> their JavaScript <strong>skill</strong>.</p>
+
+<script>
+
+    var nodes = document.querySelectorAll("strong");
+
+    for(var i = 0; i < nodes.length; i++){
+        nodes[i].addEventListener("mouseover", function(event){
+            if(event.target.nodeName == "STRONG"){
+                event.target.style.color = "red";
+            }
+        })
+
+        nodes[i].addEventListener("mouseout", function(event){
+            if(event.target.nodeName == "STRONG"){
+                event.target.style.color = "black";
+            }
+        })
+    }
+
+</script>
+
+</body>
+</html>
